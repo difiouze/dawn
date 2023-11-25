@@ -254,6 +254,7 @@
         "template--14969032638569__e534d0fc-065e-4568-8143-d017f4596a5d-button-1"
       ],
       "settings": {
+        "image": "{{ product.metafields.custom.guitare.value.image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
