@@ -227,8 +227,9 @@
       "blocks": {
         "template--14969032638569__e534d0fc-065e-4568-8143-d017f4596a5d-heading-1": {
           "type": "heading",
+          "source": "{{ product.metafields.custom.guitare.value }}",
           "settings": {
-            "heading": "Image with text",
+            "heading": "{{ product.metafields.custom.guitare.value.marque.value }}",
             "heading_size": "h1"
           }
         },
