@@ -273,7 +273,7 @@
     "2fd15494-0f55-4d69-ba03-1da58e51f6ca": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{%for guitar in product.metaobjects.guitare %}\nguitar.marque.value\n{%endfor%}",
+        "custom_liquid": "{%for guitare in product.metaobjects.guitare.values %}\nguitare.marque\n{%endfor%}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
