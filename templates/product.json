@@ -101,7 +101,7 @@
         "custom_liquid_hBe8Cj": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "{% assign console_spec = produtc.metafields.custom.console_type %}"
           }
         }
       },
