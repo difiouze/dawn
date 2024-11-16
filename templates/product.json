@@ -101,7 +101,7 @@
         "custom_liquid_hBe8Cj": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign console_specs = product.metafields.custom.console_type.value %}\n\n {{ console_specs.year }}"
+            "custom_liquid": "{% assign manufacturer = product.metafields.custom.manufacturers.value %}\n\n<div style='display: flex; flex-direction: column'>\n<span>{{ manufacturer.name }}</span>\n<span>{{ manufacturer.logo | img_tag }}</span>\n<span>{{ manufacturer.country }}</span>\n</div>"
           }
         }
       },
