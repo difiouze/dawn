@@ -103,6 +103,12 @@
           "settings": {
             "custom_liquid": "{% assign manufacturer = product.metafields.custom.manufacturers.value %}\n\n<div style='display: flex; flex-direction: column'>\n<span>{{ manufacturer.name }}</span>\n<span>{{ manufacturer.logo | img_tag }}</span>\n<span>{{ manufacturer.country }}</span>\n</div>"
           }
+        },
+        "custom_liquid_VAkhpa": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for person in product.metafields.custom.person_single_value.value %}\n{{ person }}\n{% endfor %}\n\n{% for person in product.metafields.custom.person_multiple_values.value %}\n{{ person }}\n{% endfor %}"
+          }
         }
       },
       "block_order": [
@@ -119,7 +125,8 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
-        "custom_liquid_hBe8Cj"
+        "custom_liquid_hBe8Cj",
+        "custom_liquid_VAkhpa"
       ],
       "settings": {
         "enable_sticky_info": true,
