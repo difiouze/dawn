@@ -107,7 +107,7 @@
         "custom_liquid_VAkhpa": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% for creator in product.metafields.custom.creator.value %}\n{{ creator }}\n{% endfor %}"
+            "custom_liquid": "{% for creator in product.metafields.custom.creators.value %}\n<div>\n{{ creator.role }}: {{ creator.name }} - \n{{ creator.country }}\n </div>\n{% endfor %}"
           }
         }
       },
