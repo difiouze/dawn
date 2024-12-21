@@ -3,7 +3,7 @@
 {%  form 'product', product %}
   {{ product.title }}
   {% for image in product.images %}
-    {{ image | image_url: width: 500 | image_tag }}
+    {{ image | image_url: width: 300 | image_tag }}
   {% endfor %}  
 {% endform %}
 </div>
