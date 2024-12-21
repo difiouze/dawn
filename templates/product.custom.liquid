@@ -1,9 +1,15 @@
 
 <div class="page-width">
 {%  form 'product', product %}
-  {{ product.title }}
-  {% for image in product.images %}
+  <div>
+    <div>
+      {% for image in product.images %}
     {{ image | image_url: width: 300 | image_tag }}
   {% endfor %}  
+    </div>
+    <div>
+      {{ product.title }}
+    </div>
+  </div>
 {% endform %}
 </div>
