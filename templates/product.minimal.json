@@ -7,7 +7,8 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{
+{   
+  "layout": false,
   "sections": {
     "main": {
       "type": "main-product",
