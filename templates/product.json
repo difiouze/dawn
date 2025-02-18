@@ -165,8 +165,8 @@
     "2fd15494-0f55-4d69-ba03-1da58e51f6ca": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{%for guitare in shop.metaobjects.guitare.values %}\nModèle: {{ guitare.modele}} \nMarque: {{ guitare.marque}}\n{%endfor%}\n\n{{ product.metafields.custom.couleur }}",
-        "color_scheme": "scheme-3",
+        "custom_liquid": "{{ product.metafields.custom.produit_complementaire.value.title }}",
+        "color_scheme": "scheme-1",
         "padding_top": 40,
         "padding_bottom": 52
       }
