@@ -207,6 +207,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_liquid_TDCQLt": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script>\ndataLayer.push({\n  'event': 'login',\n  'customer_name': '{{ customer.name }}',\n});\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -216,6 +226,7 @@
     "video",
     "multicolumn",
     "custom_liquid_jmeHK4",
-    "video_tdGqAY"
+    "video_tdGqAY",
+    "custom_liquid_TDCQLt"
   ]
 }
