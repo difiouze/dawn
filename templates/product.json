@@ -175,7 +175,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "{% for variant in product.variants %} \n{{variant.metafields }}\n{% endfor %}",
+        "custom_liquid": "{% for variant in product.variants %} \n{% if variant.metafields.custom.variant_gallery != blank %}\n{{ variant.metafields.custom.variant_gallery.value }}\n{% endif %}\n{% endfor %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
