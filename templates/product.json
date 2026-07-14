@@ -170,11 +170,22 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "custom_liquid_tykc7m": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{% for variant in product.variants %} \n{{variant.metafields }}\n{% endfor %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "2fd15494-0f55-4d69-ba03-1da58e51f6ca"
+    "2fd15494-0f55-4d69-ba03-1da58e51f6ca",
+    "custom_liquid_tykc7m"
   ]
 }
