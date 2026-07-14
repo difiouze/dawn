@@ -175,7 +175,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "{% assign current_variant = product.selected_or_first_available_variant %}\n\n{% if current_variant.metafields.custom.variant_gallery.value != blank %}\n  {% for image in current_variant.metafields.custom.variant_gallery.value %}\n    <img\n      src=\"{{ image | image_url }}\"\n      alt=\"{{ image.alt }}\"\n      width=\"{{ image.width }}\"\n      height=\"{{ image.height }}\"\n    >\n  {% endfor %}\n{% endif %}",
+        "custom_liquid": "{% for variant in product.variants %}\n  {% if variant.metafields.custom.variant_gallery.value != blank %}\n    {% for image in variant.metafields.custom.variant_gallery.value %}\n      <img src=\"{{ image | image_url }}\" alt=\"{{ image.alt }}\">\n    {% endfor %}\n  {% endif %}\n{% endfor %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
